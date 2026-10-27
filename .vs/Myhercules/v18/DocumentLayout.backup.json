@@ -16,8 +16,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -26,7 +30,7 @@
               "RelativeDocumentMoniker": "Myhercules\\UI\\Form1.cs",
               "ToolTip": "\\\\tampc\\Share\\Myhercules\\Myhercules\\UI\\Form1.cs",
               "RelativeToolTip": "Myhercules\\UI\\Form1.cs",
-              "ViewState": "AgIAAGgBAAAAAAAAAAAIwIABAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAIwG8BAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T02:11:16.344Z",
               "EditorCaption": ""

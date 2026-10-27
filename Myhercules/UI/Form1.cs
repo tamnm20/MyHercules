@@ -1618,6 +1618,16 @@ namespace Myhercules
                             AddTextAndScrollToBottom(prefix + displayData, Color.Black, false);
                         }));
                     }
+
+                    // Server echo: phản hồi ngược lại toàn bộ dữ liệu nhận được về phía Remote IP và Port gửi tới
+                    if (cb_UdpServerEcho.Checked && udpClient != null)
+                    {
+                        try
+                        {
+                            await udpClient.SendAsync(receivedBytes, receivedBytes.Length, remoteEP);
+                        }
+                        catch { }
+                    }
                 }
                 catch (ObjectDisposedException)
                 {

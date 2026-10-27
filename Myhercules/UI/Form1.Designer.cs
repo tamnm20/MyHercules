@@ -46,6 +46,7 @@ namespace Myhercules
             this.tb_UdpRemotePort = new System.Windows.Forms.TextBox();
             this.labelUdpLocalPort = new System.Windows.Forms.Label();
             this.tb_UdpLocalPort = new System.Windows.Forms.TextBox();
+            this.cb_UdpServerEcho = new System.Windows.Forms.CheckBox();
             this.cb_UdpShowRemote = new System.Windows.Forms.CheckBox();
             this.bt_UdpListen = new System.Windows.Forms.Button();
             this.udp_State_Connect = new System.Windows.Forms.PictureBox();
@@ -960,6 +961,7 @@ namespace Myhercules
             this.groupBoxUDP.Controls.Add(this.udp_State_Connect);
             this.groupBoxUDP.Controls.Add(this.lb_UdpStatus);
             this.groupBoxUDP.Controls.Add(this.bt_UdpListen);
+            this.groupBoxUDP.Controls.Add(this.cb_UdpServerEcho);
             this.groupBoxUDP.Controls.Add(this.cb_UdpShowRemote);
             this.groupBoxUDP.Controls.Add(this.tb_UdpLocalPort);
             this.groupBoxUDP.Controls.Add(this.labelUdpLocalPort);
@@ -1037,16 +1039,26 @@ namespace Myhercules
             this.tb_UdpLocalPort.TabIndex = 6;
             this.tb_UdpLocalPort.Text = "5000";
             // 
+            // cb_UdpServerEcho
+            // 
+            this.cb_UdpServerEcho.AutoSize = true;
+            this.cb_UdpServerEcho.Location = new System.Drawing.Point(10, 118);
+            this.cb_UdpServerEcho.Name = "cb_UdpServerEcho";
+            this.cb_UdpServerEcho.Size = new System.Drawing.Size(84, 17);
+            this.cb_UdpServerEcho.TabIndex = 7;
+            this.cb_UdpServerEcho.Text = "Server echo";
+            this.cb_UdpServerEcho.UseVisualStyleBackColor = true;
+            // 
             // cb_UdpShowRemote
             // 
             this.cb_UdpShowRemote.AutoSize = true;
             this.cb_UdpShowRemote.Checked = true;
             this.cb_UdpShowRemote.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_UdpShowRemote.Location = new System.Drawing.Point(10, 118);
+            this.cb_UdpShowRemote.Location = new System.Drawing.Point(105, 118);
             this.cb_UdpShowRemote.Name = "cb_UdpShowRemote";
-            this.cb_UdpShowRemote.Size = new System.Drawing.Size(155, 17);
-            this.cb_UdpShowRemote.TabIndex = 7;
-            this.cb_UdpShowRemote.Text = "Show Remote IP in terminal";
+            this.cb_UdpShowRemote.Size = new System.Drawing.Size(107, 17);
+            this.cb_UdpShowRemote.TabIndex = 8;
+            this.cb_UdpShowRemote.Text = "Show Remote IP";
             this.cb_UdpShowRemote.UseVisualStyleBackColor = true;
             // 
             // bt_UdpListen
@@ -1633,6 +1645,7 @@ namespace Myhercules
         private TextBox tb_UdpRemotePort;
         private Label labelUdpLocalPort;
         private TextBox tb_UdpLocalPort;
+        private CheckBox cb_UdpServerEcho;
         private CheckBox cb_UdpShowRemote;
         private Button bt_UdpListen;
         private PictureBox udp_State_Connect;
